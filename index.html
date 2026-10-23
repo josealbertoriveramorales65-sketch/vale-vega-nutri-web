@@ -18,8 +18,6 @@
   ::selection{background:#D6EAF4}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-
-  /* layout helpers */
   .wrap{max-width:1120px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px}
   .kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#2C7FA3;margin-bottom:16px}
   .h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-.01em;text-wrap:balance}
@@ -30,9 +28,8 @@
   .pill{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-size:15px;font-weight:500;padding:12px 20px;border-radius:999px}
   .pill-dark{background:#16242B;color:#fff}.pill-dark:hover{background:#2C7FA3;color:#fff}
   .pill-blue{background:#2C7FA3;color:#fff}.pill-blue:hover{background:#1F6889;color:#fff}
+  .pill-wa{background:#16734C;color:#fff}.pill-wa:hover{background:#105939;color:#fff}
   .pill-ghost{color:#16242B;border:1px solid #D7E1E6}.pill-ghost:hover{border-color:#2C7FA3;color:#2C7FA3}
-  .field{font:inherit;font-size:16px;padding:14px 16px;border:1px solid #D7E1E6;border-radius:4px;background:#FBFCFD;color:#16242B;width:100%}
-  .field:focus{border-color:#2C7FA3;background:#fff;outline:none}
   .skip{position:absolute;left:-9999px;top:0;background:#16242B;color:#fff;padding:12px 18px;z-index:99}
   .skip:focus{left:0}
   .nav a{text-decoration:none;color:#4C5F68}.nav a:hover{color:#16242B}
@@ -53,7 +50,8 @@
       <div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2.4vw,28px);font-size:15px">
         <a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#testimonios">Testimonios</a><a href="#sedes">Sedes</a><a href="#faq">FAQ</a>
       </div>
-      <a class="pill pill-dark" href="#contacto" style="font-size:14px;padding:11px 20px;white-space:nowrap">Agendá tu consulta</a>
+      <!-- ✦ WhatsApp +506 8820 0984 ✦ -->
+      <a class="pill pill-dark" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta." target="_blank" rel="noopener noreferrer" style="font-size:14px;padding:11px 20px;white-space:nowrap">Agendá tu consulta</a>
     </nav>
   </div>
 </header>
@@ -67,9 +65,8 @@
       <h1 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(40px,6.2vw,68px);line-height:1.06;letter-spacing:-.015em;text-wrap:balance">Tu salud, entendida<br><em style="color:#2C7FA3">antes</em> de ser tratada.</h1>
       <p style="margin-top:22px;font-size:clamp(17px,1.6vw,19px);line-height:1.65;color:#4C5F68;max-width:50ch;text-wrap:pretty">Te acompaño para mejorar tu energía, tu rendimiento físico y tu balance hormonal. Sin dietas restrictivas y sin culpa: un plan realista, construido alrededor de tu vida.</p>
       <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-        <a class="pill pill-blue" href="#contacto" style="font-size:16px;padding:16px 30px;box-shadow:0 10px 24px -12px rgba(44,127,163,.8)">Agendá tu primera consulta</a>
-        <!-- ✦ WhatsApp directo · +506 8820 0984 ✦ -->
-        <a class="pill pill-ghost" href="https://wa.me/50688200984?text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" style="font-size:16px;padding:16px 24px"><span style="width:10px;height:10px;border-radius:50%;background:#1F8F62"></span>Escribime por WhatsApp</a>
+        <a class="pill pill-blue" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20quiero%20agendar%20mi%20primera%20consulta." target="_blank" rel="noopener noreferrer" style="font-size:16px;padding:16px 30px;box-shadow:0 10px 24px -12px rgba(44,127,163,.8)">Agendá tu primera consulta</a>
+        <a class="pill pill-ghost" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" style="font-size:16px;padding:16px 24px"><span style="width:10px;height:10px;border-radius:50%;background:#17714D"></span>Escribime por WhatsApp</a>
         <a href="#servicios" style="color:#4C5F68;text-decoration:none;font-size:16px;font-weight:500;padding:16px 8px">Conocé los programas</a>
       </div>
       <div style="margin-top:44px">
@@ -90,7 +87,7 @@
 
   <!-- ░░ SOBRE MÍ ░░ -->
   <section id="sobre-mi" aria-labelledby="t-sobre" style="border-top:1px solid #E7EDF0;background:#fff">
-    <div class="wrap cols" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+    <div class="wrap cols">
       <div>
         <p class="kicker">Sobre mí</p>
         <h2 id="t-sobre" class="h2">Valeria Vega, nutricionista clínica y deportiva</h2>
@@ -164,10 +161,10 @@
             <p style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#7A8A92">Contacto Smart Body</p>
             <!-- ✦ CONTACTO SMART BODY · WhatsApp +506 8820 0984 · IG @smartbodycr ✦ -->
             <div style="display:flex;flex-wrap:wrap;gap:10px">
-              <a class="pill" href="https://wa.me/50688200984?text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Smart%20Body" target="_blank" rel="noopener noreferrer" style="background:#1F8F62;color:#fff"><span style="width:9px;height:9px;border-radius:50%;background:#fff"></span>WhatsApp</a>
+              <a class="pill pill-wa" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Smart%20Body" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Smart Body"><span style="width:9px;height:9px;border-radius:50%;background:#fff"></span>WhatsApp</a>
               <a class="pill pill-ghost" href="https://www.instagram.com/smartbodycr?utm_source=ig_web_button_share_sheet&amp;xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span style="width:9px;height:9px;border-radius:2px;border:2px solid #2C7FA3"></span>Instagram</a>
             </div>
-            <a class="pill pill-dark" href="#contacto" style="justify-content:center;padding:14px 22px">Agendá en Smart Body</a>
+            <a class="pill pill-dark" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Smart%20Body." target="_blank" rel="noopener noreferrer" style="justify-content:center;padding:14px 22px">Agendá en Smart Body</a>
           </div>
         </article>
 
@@ -189,10 +186,10 @@
             <p style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#7A8A92">Contacto Primitiva</p>
             <!-- ✦ CONTACTO PRIMITIVA · WhatsApp +506 8820 0984 · IG @primitiva.cr ✦ -->
             <div style="display:flex;flex-wrap:wrap;gap:10px">
-              <a class="pill" href="https://wa.me/50688200984?text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Primitiva" target="_blank" rel="noopener noreferrer" style="background:#1F8F62;color:#fff"><span style="width:9px;height:9px;border-radius:50%;background:#fff"></span>WhatsApp</a>
+              <a class="pill pill-wa" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Primitiva" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Primitiva"><span style="width:9px;height:9px;border-radius:50%;background:#fff"></span>WhatsApp</a>
               <a class="pill pill-ghost" href="https://www.instagram.com/primitiva.cr?utm_source=ig_web_button_share_sheet&amp;dlrf=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span style="width:9px;height:9px;border-radius:2px;border:2px solid #2C7FA3"></span>Instagram</a>
             </div>
-            <a class="pill pill-dark" href="#contacto" style="justify-content:center;padding:14px 22px">Agendá en Primitiva</a>
+            <a class="pill pill-dark" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20Primitiva." target="_blank" rel="noopener noreferrer" style="justify-content:center;padding:14px 22px">Agendá en Primitiva</a>
           </div>
         </article>
 
@@ -237,7 +234,7 @@
       <div>
         <p class="kicker">Preguntas frecuentes</p>
         <h2 id="t-faq" class="h2">Antes de que empieces tu proceso</h2>
-        <p class="lead" style="margin-top:18px">¿Te queda una duda fuera de esta lista? Escribime y la resolvemos sin compromiso.</p>
+        <p class="lead" style="margin-top:18px">¿Te queda una duda fuera de esta lista? Escribime por WhatsApp y la resolvemos sin compromiso.</p>
       </div>
       <!-- Acordeón: para agregar una pregunta duplicá un bloque .faq -->
       <div id="faqs" style="border-top:1px solid #E7EDF0">
@@ -289,6 +286,7 @@
                 <span style="display:flex;gap:10px;font-size:15.5px;line-height:1.6;background:#fff;border-radius:4px;padding:12px 14px"><span style="width:8px;height:8px;border-radius:50%;border:2px solid #2C7FA3;flex:none;margin-top:6px"></span><span>Cualquier día de la semana de 6:00 am a 5:30 pm<br>Sábados de 7:00 am a 1:00 pm</span></span>
               </button>
               <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px">
+                <!-- ✦ Waze y Google Maps · SEDE 1 ✦ -->
                 <a class="pill pill-blue" href="https://waze.com/ul/hd1u22wj7b" target="_blank" rel="noopener noreferrer" aria-label="Cómo llegar a Concepción de Tres Ríos con Waze"><span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #fff;transform:rotate(90deg)"></span>Cómo llegar · Waze</a>
                 <a class="pill pill-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Concepci%C3%B3n+de+Tres+R%C3%ADos,+La+Uni%C3%B3n,+Cartago" target="_blank" rel="noopener noreferrer"><span style="width:9px;height:9px;border-radius:50% 50% 50% 2px;border:2px solid #2C7FA3"></span>Google Maps</a>
               </div>
@@ -306,6 +304,7 @@
                 <span style="display:flex;gap:10px;font-size:15.5px;line-height:1.6;background:#F4F8FA;border-radius:4px;padding:12px 14px"><span style="width:8px;height:8px;border-radius:50%;border:2px solid #2C7FA3;flex:none;margin-top:6px"></span><span>Lunes y miércoles de 3:00 pm a 5:30 pm<br>Viernes de 6:00 am a 10:00 am</span></span>
               </button>
               <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px">
+                <!-- ✦ Waze y Google Maps · SEDE 2 ✦ -->
                 <a class="pill pill-blue" href="https://waze.com/ul/hd1u0x85rr" target="_blank" rel="noopener noreferrer" aria-label="Cómo llegar a U-Wellness con Waze"><span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #fff;transform:rotate(90deg)"></span>Cómo llegar · Waze</a>
                 <a class="pill pill-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=U-Wellness+San+Pedro+de+Montes+de+Oca" target="_blank" rel="noopener noreferrer"><span style="width:9px;height:9px;border-radius:50% 50% 50% 2px;border:2px solid #2C7FA3"></span>Google Maps</a>
               </div>
@@ -314,7 +313,6 @@
           <!-- ══════════ FIN SEDE 2 ══════════ -->
         </ul>
 
-        <!-- Mapa: los src se editan en el array SEDES del script -->
         <div style="position:sticky;top:96px;border:1px solid #E7EDF0;border-radius:8px;overflow:hidden;background:#F2F6F8">
           <iframe id="mapa" title="Mapa de la sede seleccionada" src="https://www.google.com/maps?q=Concepci%C3%B3n+de+Tres+R%C3%ADos,+La+Uni%C3%B3n,+Cartago,+Costa+Rica&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display:block;width:100%;aspect-ratio:4/3;min-height:340px;border:0"></iframe>
           <p style="padding:16px 20px;font-size:14.5px;color:#4C5F68;border-top:1px solid #E7EDF0;background:#fff">Estás viendo: <strong id="mapa-label" style="color:#16242B;font-weight:500">Concepción de Tres Ríos</strong></p>
@@ -323,43 +321,39 @@
     </div>
   </section>
 
-  <!-- ░░ CONTACTO ░░ -->
-  <section id="contacto" aria-labelledby="t-cont" style="background:#EAF4F9">
-    <div class="wrap cols">
-      <div>
-        <p class="kicker">Agendá tu consulta</p>
-        <h2 id="t-cont" class="h2">Conversemos sobre tu punto de partida</h2>
-        <p class="lead" style="margin-top:18px;color:#3C4E57;max-width:46ch">Contame qué te trae por acá y te respondo personalmente dentro de las próximas 48 horas hábiles con la disponibilidad de agenda.</p>
-        <ul style="margin:28px 0 0;padding:0;list-style:none;display:grid;gap:12px;font-size:16px">
-          <li><a href="mailto:vvegacaballero@gmail.com?subject=Consulta%20desde%20la%20web" style="color:#1F6889">vvegacaballero@gmail.com</a></li>
-          <li><a href="https://wa.me/50688200984?text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" style="color:#1F6889">WhatsApp · +506 8820 0984</a></li>
-          <li style="color:#3C4E57">Te atiendo online estés donde estés</li>
-        </ul>
+  <!-- ░░ CONTACTO · SOLO WHATSAPP (sin formulario ni correo expuesto) ░░ -->
+  <section id="contacto" aria-labelledby="t-cont" style="background:#16242B;color:#F4F8FA">
+    <div style="max-width:1120px;margin:0 auto;padding:clamp(64px,9vw,120px) 24px;display:grid;gap:clamp(32px,5vw,56px);justify-items:center;text-align:center">
+      <div style="max-width:60ch;display:grid;gap:18px;justify-items:center">
+        <p style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8FC8E0">Agendá tu consulta</p>
+        <h2 id="t-cont" style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(32px,5vw,54px);line-height:1.1;letter-spacing:-.015em;color:#fff;text-wrap:balance">Escribime y empezamos hoy mismo</h2>
+        <p style="font-size:clamp(17px,1.7vw,19px);line-height:1.7;color:#B6C6CE;max-width:52ch;text-wrap:pretty">Contame qué te trae por acá por WhatsApp y coordinamos tu primera consulta. Te respondo personalmente.</p>
       </div>
 
-      <!-- ✦ ENVÍO DEL FORMULARIO A vvegacaballero@gmail.com ✦
-           ACTIVO AHORA · mailto: abre el correo del visitante con el mensaje redactado.
-           RECOMENDADO para recibirlo sin salir de la web · Formspree:
-             1) Creá un formulario en formspree.io con vvegacaballero@gmail.com
-             2) Reemplazá el action por tu ID: action="https://formspree.io/f/xayzqwer"
-                y quitá el encType="text/plain" -->
-      <form id="form" action="mailto:vvegacaballero@gmail.com" method="POST" enctype="text/plain" novalidate style="background:#fff;border-radius:8px;padding:clamp(24px,3.5vw,40px);display:grid;gap:20px">
-        <input type="hidden" name="_subject" value="Nueva solicitud de consulta · Vale Vega Nutri">
-        <input type="text" name="_gotcha" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none">
-        <div style="display:grid;gap:8px"><label for="f-nombre" style="font-size:14px;font-weight:500">Nombre completo</label><input class="field" id="f-nombre" name="nombre" type="text" required autocomplete="name" placeholder="Ej. María Pérez"></div>
-        <div style="display:grid;gap:8px"><label for="f-email" style="font-size:14px;font-weight:500">Correo electrónico</label><input class="field" id="f-email" name="email" type="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com"></div>
-        <div style="display:grid;gap:8px"><label for="f-servicio" style="font-size:14px;font-weight:500">Servicio de interés</label>
-          <select class="field" id="f-servicio" name="servicio">
-            <option value="smart-body">Smart Body — nutrición general y deportiva</option>
-            <option value="primitiva">Primitiva — salud y balance hormonal</option>
-            <option value="no-se">Aún no lo sé, necesito orientación</option>
-          </select>
-        </div>
-        <div style="display:grid;gap:8px"><label for="f-mensaje" style="font-size:14px;font-weight:500">Mensaje</label><textarea class="field" id="f-mensaje" name="mensaje" rows="4" required placeholder="Contame brevemente tu objetivo o tu situación actual" style="resize:vertical"></textarea></div>
-        <p id="estado" role="status" aria-live="polite" style="font-size:15px;line-height:1.6"></p>
-        <button type="submit" class="pill pill-blue" style="justify-content:center;border:0;font:inherit;font-size:16px;font-weight:500;padding:16px 28px;cursor:pointer">Enviar solicitud</button>
-        <p style="font-size:13.5px;line-height:1.6;color:#7A8A92">Tus datos se usan únicamente para responder tu consulta. No se comparten con terceros.</p>
-      </form>
+      <!-- ✦ BOTÓN PRINCIPAL · WhatsApp +506 8820 0984 ✦ -->
+      <a href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al +506 8820 0984" style="display:inline-flex;align-items:center;gap:14px;text-decoration:none;background:#17714D;color:#fff;font-size:clamp(17px,1.8vw,20px);font-weight:500;padding:20px 38px;border-radius:999px;box-shadow:0 14px 30px -14px rgba(31,143,98,.9)">
+        <span aria-hidden="true" style="width:14px;height:14px;border-radius:50% 50% 2px 50%;background:#fff;flex:none"></span>
+        Escribime por WhatsApp
+      </a>
+      <p style="font-size:17px;color:#8FC8E0;letter-spacing:.02em;margin-top:-16px">+506 8820 0984</p>
+
+      <ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;width:100%;max-width:820px;text-align:left">
+        <li style="border:1px solid #39505B;border-radius:6px;padding:22px 24px;display:grid;gap:8px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8FC8E0">Respuesta</span>
+          <span style="font-size:16.5px;line-height:1.6;color:#E7EEF2">Dentro de las próximas 48 horas hábiles</span>
+        </li>
+        <li style="border:1px solid #39505B;border-radius:6px;padding:22px 24px;display:grid;gap:8px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8FC8E0">Modalidades</span>
+          <span style="font-size:16.5px;line-height:1.6;color:#E7EEF2">Online estés donde estés, o presencial en mis dos sedes</span>
+        </li>
+        <li style="border:1px solid #39505B;border-radius:6px;padding:22px 24px;display:grid;gap:8px">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8FC8E0">También por Instagram</span>
+          <span style="display:flex;flex-wrap:wrap;gap:10px;margin-top:2px">
+            <a href="https://www.instagram.com/smartbodycr?utm_source=ig_web_button_share_sheet&amp;xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color:#E7EEF2;text-decoration:none;font-size:15.5px;border-bottom:1px solid #39505B">@smartbodycr</a>
+            <a href="https://www.instagram.com/primitiva.cr?utm_source=ig_web_button_share_sheet&amp;dlrf=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color:#E7EEF2;text-decoration:none;font-size:15.5px;border-bottom:1px solid #39505B">@primitiva.cr</a>
+          </span>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
@@ -372,9 +366,9 @@
       <p style="font-size:15px;line-height:1.65;max-width:34ch">Nutrición profesional, humana y basada en evidencia.</p>
     </div>
     <nav aria-label="Redes sociales" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start">
-      <a class="pill" href="https://www.instagram.com/primitiva.cr?utm_source=ig_web_button_share_sheet&amp;dlrf=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color:#E7EEF2;border:1px solid #39505B;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:2px;border:1.5px solid #8FC8E0"></span>@primitiva.cr</a>
-      <a class="pill" href="https://www.instagram.com/smartbodycr?utm_source=ig_web_button_share_sheet&amp;xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color:#E7EEF2;border:1px solid #39505B;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:2px;border:1.5px solid #8FC8E0"></span>@smartbodycr</a>
-      <a class="pill" href="https://wa.me/50688200984?text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" style="color:#16242B;background:#fff;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:50%;background:#1F8F62"></span>WhatsApp</a>
+      <a class="pill" href="https://www.instagram.com/primitiva.cr?utm_source=ig_web_button_share_sheet&amp;dlrf=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Primitiva" style="color:#E7EEF2;border:1px solid #39505B;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:2px;border:1.5px solid #8FC8E0"></span>@primitiva.cr</a>
+      <a class="pill" href="https://www.instagram.com/smartbodycr?utm_source=ig_web_button_share_sheet&amp;xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Smart Body" style="color:#E7EEF2;border:1px solid #39505B;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:2px;border:1.5px solid #8FC8E0"></span>@smartbodycr</a>
+      <a class="pill" href="https://api.whatsapp.com/send?phone=50688200984&amp;text=Hola%20Valeria%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Vale Vega Nutri" style="color:#16242B;background:#fff;font-size:14.5px;padding:11px 18px"><span style="width:8px;height:8px;border-radius:50%;background:#17714D"></span>WhatsApp</a>
     </nav>
   </div>
   <div style="max-width:1120px;margin:0 auto;padding:0 24px clamp(36px,4vw,48px)">
@@ -415,20 +409,6 @@ document.querySelectorAll('.sede').forEach(function (card) {
     document.getElementById('mapa').src = SEDES[i].src;
     document.getElementById('mapa-label').textContent = SEDES[i].label;
   });
-});
-
-/* ── Validación del formulario ── */
-document.getElementById('form').addEventListener('submit', function (e) {
-  var f = e.target, estado = document.getElementById('estado');
-  var ok = f.nombre.value.trim() && f.mensaje.value.trim() && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim());
-  if (!ok) {
-    e.preventDefault();
-    estado.textContent = 'Revisá tu nombre, un correo válido y tu mensaje antes de enviar.';
-    estado.style.cssText = 'font-size:15px;line-height:1.6;padding:12px 14px;border-radius:4px;color:#8A2B2B;background:#FBEEEE';
-    return;
-  }
-  estado.textContent = '¡Gracias! Tu solicitud fue enviada. Te respondo dentro de 48 horas hábiles.';
-  estado.style.cssText = 'font-size:15px;line-height:1.6;padding:12px 14px;border-radius:4px;color:#1F6889;background:#EAF4F9';
 });
 </script>
 </body>
